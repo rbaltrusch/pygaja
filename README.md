@@ -25,4 +25,4 @@ To build the WebAssembly build of the game, install pygbag, then run:
 
 python -m pygbag .
 
-The game should run on `localhost:8000`.
+This should build the game in the `build` directory (this can be uploaded to itch.io) and host the web game on `localhost:8000`.
