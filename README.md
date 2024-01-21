@@ -23,6 +23,6 @@ Clone the repository, then update the `main.py` file with your own code.
 
 To build the WebAssembly build of the game, install pygbag, then run:
 
-python -m pygbag src
+python -m pygbag .
 
 The game should run on `localhost:8000`.
