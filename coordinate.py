@@ -12,7 +12,7 @@ class Coordinate:
     """Coordinate point class"""
 
     x: float = 0  # pylint: disable=invalid-name
-    y: float = 0 # pylint: disable=invalid-name
+    y: float = 0  # pylint: disable=invalid-name
 
     def __iter__(self):
         yield self.x
@@ -26,6 +26,9 @@ class Coordinate:
 
     def __add__(self, coord: Coordinate) -> Coordinate:
         return Coordinate(self.x + coord.x, self.y + coord.y)
+
+    def __sub__(self, coord: Coordinate) -> Coordinate:
+        return Coordinate(self.x - coord.x, self.y - coord.y)
 
     def compute_distance(self, coordinate: Coordinate) -> float:
         """Returns the distance from this point to the specified point"""
